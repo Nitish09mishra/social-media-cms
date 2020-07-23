@@ -1,0 +1,172 @@
+body{
+    margin:0px;
+    padding: 0px;
+    color: red;
+    background-color: royalblue;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+/*.header css starts*/
+.header {
+	z-index: 999;
+	overflow: hidden;
+	background-color:#040a3d;
+    position:sticky;
+    padding: 3px 5px;
+	top: 0px;
+}
+.header span{
+	font-family: cursive;
+	letter-spacing: 2px;
+	color: white;
+	font-size: 25px;
+	text-transform: lowercase;
+	text-shadow: 5px 2px 10px black;
+    padding-left: 16px; 
+}
+.header a {
+   float: right;
+   /*display: block;*/
+   color: white;
+   text-align: center;
+   padding: 8px 10px;
+   text-decoration: none;
+   font-size: 15px;
+   font-weight: 2px;
+}
+.header a i{
+    color: lawngreen;
+}
+.header a:hover {
+   background-color: rgb(220,170,170,0.6);
+   color: white;
+   border-radius: 20px;
+}
+
+.header a.my_icon {
+  display: none;
+}
+@media screen and (max-width: 770px) {
+  .header a {display: none;}
+  .header a.my_icon {
+  	position: sticky;
+    float: right;
+    display: block;
+  }
+  .header .image{
+  	width: 100%;
+  	height: auto;
+  }
+ 
+ 
+}
+@media screen and (max-width: 770px) {
+  .header.responsive .my_icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .header .responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+    border-radius: 0px;
+  }
+}
+/*.header css ends*/
+
+.myform{
+    text-align: left;
+    width: 70%;
+    margin-top: 5%;
+    margin-left: 3%;
+}
+input{
+    width: 280px;
+    outline: none;
+    border: 0.2px solid blue;
+    padding:10px;
+    border-radius: 5px;
+}
+.itext{
+    font-size: 20px;
+    color: black;
+}
+#iheader{
+    color:green;
+    margin-left: 3%;
+}
+
+/* css for login page */
+.login{
+    margin: 200px 55%;
+    width: 35%;
+    height:auto;
+    background-color: rgba(100, 510, 200, 0.4);
+    border-radius: 5px;
+    color: black;
+    font-size: 20px;
+    padding: 2% 4%;
+}
+.login h2{
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  /* background-color: rgba(250, 230, 190, 0.7); */
+  padding:0px 10px;
+  border-radius: 5px;
+}
+.login a{
+  color:blue;
+  font-size: 16px;
+  text-decoration: none;
+  margin: 8px 0;
+}
+.button{
+    border-style: none;
+    width: 300px;
+    color: white;
+    padding: 11px;
+    border-radius: 8px;
+    border:2px solod pink;
+    outline: none;
+    cursor: pointer;
+    background-color: rgb(50,50,200);
+}
+.login .button:hover{
+  background-color:#040a3d;
+}
+
+/*footer css...*/
+.footer {
+  position: sticky;
+  bottom: 0px;;
+  padding-bottom: 40px;
+  height: 50px; 
+  width: 100%;
+  background-color: rgb(73,134,195);
+}
+.footer .r5{
+  margin: 0 auto 0 auto;
+  width: 70%;
+  color: black;
+}
+.footer .r5 i{
+  float: right;
+  padding: 0 17px 0 0;
+  font-size: 22px;
+  color: black;
+}
+@media(max-width: 767px){
+  .footer .r3, .r4{
+    display: none;
+  }
+  .footer .r5{
+  width: 100%;
+    }
+    .footer .r5 i{
+  display: none;
+  }
+}
+

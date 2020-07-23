@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/style.css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+
+<body>
+    {{>header}}
+   <div class="login">
+       <h2>Signup for new account...</h2><hr>
+       <form action="/signup" method="POST">
+           <table>
+               <tr>
+                   <td> <label for="name"><p>name: </p></label></td>
+                   <td><input type="text" name="name" placeholder="name"></td>
+               </tr>
+               <tr>
+                   <td><label for="email"><p>email: </p></label></td>
+                   <td><input type="email" name="email" placeholder="email"></td>
+               </tr>
+               <tr>
+                   <td><label for="age"><p>age: </p></label></td>
+                   <td><input type="number" name="age" placeholder="age" min="11" ></td>
+               </tr>
+               <tr>
+                   <td><label for="gender"><p>gender: </p></label></td>
+                   <td><input type="text" name="gender" placeholder="gender">
+                   </td>
+               </tr>
+                <tr>
+                   <td><label for="password"><p>password: </p></label></td>
+                   <td><input type="password" name="password" placeholder="password"></td>
+               </tr>
+               <tr>
+                    <td></td>
+                    <td><input class="button" type="submit" placeholder="SignUp"></label></td>
+               </tr>
+           </table>
+       </form>
+        <h5>Already have an account? <a href="/login">Login</a></h5>
+    </div>
+    {{>footer}}
+</body>
+</html>

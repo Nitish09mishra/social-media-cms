@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/style.css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+
+<body>
+    {{>header}}
+    <h1 id="iheader">Weather...</h1>
+   <div class="myform">
+       <form>
+           <input type="text" placeholder="Location">
+           {{!-- <button>Search</button> --}}
+       </form>
+       <p class="itext" id="p0"></p>
+       <p class="itext" id="p1"></p>
+       <p class="itext" id="p2"></p>
+   </div>
+   {{>footer}}
+   <script src="/js/app.js"></script>
+</body>
+</html>

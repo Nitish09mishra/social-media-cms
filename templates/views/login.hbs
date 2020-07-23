@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/style.css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+
+<body>
+    {{>header}}
+   <div class="login">
+       <h2>Please login to your profile...</h2><hr>
+           <table>
+               <tr><p>  </p></tr>               
+               <tr>
+                   <td><p>Email: </p></td>
+                   <td><input type="email" name="email" placeholder="email"></td>
+               </tr>
+                <tr>
+                   <td><p>Password: </p></td>
+                   <td><input type="password" name="password" placeholder="password"></td>
+               </tr>
+               <tr>
+                    <td></td>
+                    <td><input class="button" type="submit" placeholder="Login"></label></td>
+               </tr>
+           </table>
+           <h5>New user? <a href="/signup">Signup</a></h5>
+    </div>
+        {{>footer}}
+</body>
+</html>
